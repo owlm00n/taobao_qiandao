@@ -1,0 +1,8 @@
+node_modules/
+.env
+*.local.json
+config/*.request.json
+!config/*.example.json
+.har
+*.har
+.DS_Store

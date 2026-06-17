@@ -1,0 +1,16 @@
+{
+  "name": "zuiqingfeng sign-in request captured from Taobao App",
+  "store": "zuiqingfeng",
+  "shopId": "116576560",
+  "capturedAt": "2026-06-17T00:00:00+08:00",
+  "method": "POST",
+  "url": "https://acs.m.taobao.com/h5/REPLACE_WITH_REAL_MTOP_API/1.0/",
+  "headers": {
+    "user-agent": "REPLACE_WITH_REAL_USER_AGENT",
+    "content-type": "application/x-www-form-urlencoded;charset=UTF-8",
+    "referer": "REPLACE_WITH_REAL_REFERER",
+    "origin": "https://market.m.taobao.com",
+    "cookie": "REPLACE_WITH_REAL_COOKIE"
+  },
+  "body": "data=REPLACE_WITH_REAL_BODY"
+}

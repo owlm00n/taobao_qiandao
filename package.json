@@ -1,0 +1,17 @@
+{
+  "name": "taobao_qiandao",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Taobao/Tmall shop member sign-in helper. Currently includes ZuiQingFeng store request replay scaffold.",
+  "type": "module",
+  "scripts": {
+    "signin:zuiqingfeng": "node src/cli.js zuiqingfeng",
+    "test": "node --test",
+    "har:extract": "node src/har-extract.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
