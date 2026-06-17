@@ -7,7 +7,8 @@
   "scripts": {
     "signin:zuiqingfeng": "node src/cli.js zuiqingfeng",
     "test": "node --test",
-    "har:extract": "node src/har-extract.js"
+    "har:extract": "node src/har-extract.js",
+    "qx:extract": "node src/qx-extract.js"
   },
   "engines": {
     "node": ">=18"

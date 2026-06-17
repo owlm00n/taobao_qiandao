@@ -6,3 +6,5 @@ config/*.request.json
 .har
 *.har
 .DS_Store
+captures/
+*.zip

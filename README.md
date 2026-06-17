@@ -58,6 +58,16 @@ cp config/zuiqingfeng.request.example.json config/zuiqingfeng.request.json
 - Cookie / token 等同登录凭证，请只放在本地 `config/*.request.json`，不要提交到 Git。
 - `.gitignore` 已默认忽略 `config/*.request.json`。
 
+## Quantumult X 导出目录分析
+
+如果你从 Quantumult X 导出的是一个包含 `basic`、`request_headers`、`request_body`、`response_body` 的目录，可以用：
+
+```bash
+node src/qx-extract.js captures/2026-06-18-003452
+```
+
+工具会对每条请求打分并脱敏输出，帮助判断是否真的抓到了醉清风签到请求。真正有价值的请求通常会命中：`116576560`、`zuiqingfeng`、`member`、`sign`、`mtop`、`acs.m.taobao.com` 或 `h5api.m.taobao.com`。
+
 ## 从 HAR 自动提取候选请求
 
 如果你导出了 Charles / Reqable / mitmproxy 的 HAR 文件，可以先让工具自动筛选疑似淘宝签到请求：
