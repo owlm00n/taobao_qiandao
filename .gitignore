@@ -8,3 +8,6 @@ config/*.request.json
 .DS_Store
 captures/
 *.zip
+.browser-profile/
+playwright-report/
+test-results/

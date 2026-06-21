@@ -8,11 +8,13 @@
     "signin:zuiqingfeng": "node src/cli.js zuiqingfeng",
     "test": "node --test",
     "har:extract": "node src/har-extract.js",
-    "qx:extract": "node src/qx-extract.js"
+    "qx:extract": "node src/qx-extract.js",
+    "web:capture": "node src/web-capture.js"
   },
   "engines": {
     "node": ">=18"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "playwright-core": "^1.61.0"
+  }
 }

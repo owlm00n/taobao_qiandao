@@ -58,6 +58,23 @@ cp config/zuiqingfeng.request.example.json config/zuiqingfeng.request.json
 - Cookie / token 等同登录凭证，请只放在本地 `config/*.request.json`，不要提交到 Git。
 - `.gitignore` 已默认忽略 `config/*.request.json`。
 
+## 电脑端 H5 自动抓包
+
+如果手机抓包不方便，可以在电脑/服务器上用 Playwright 模拟手机浏览器并记录淘宝/天猫网络请求：
+
+```bash
+npm install
+node src/web-capture.js --seconds 120
+```
+
+脚本默认访问醉清风移动店铺页，输出目录为 `captures/web-*`，包含页面截图、`network.jsonl` 和 `summary.json`。如果页面出现登录二维码，可以把截图打开后用手机淘宝扫码登录，再重新运行脚本。
+
+也可以指定 URL：
+
+```bash
+node src/web-capture.js --url "https://shop.m.taobao.com/shop/shop_index.htm?shop_id=116576560" --seconds 120
+```
+
 ## Quantumult X 导出目录分析
 
 如果你从 Quantumult X 导出的是一个包含 `basic`、`request_headers`、`request_body`、`response_body` 的目录，可以用：
